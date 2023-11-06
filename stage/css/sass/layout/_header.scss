@@ -1,0 +1,31 @@
+/* star Header */
+.header {
+  background-color: $purple1;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .myLogo {
+      img {
+        width: 65px;
+      }
+    }
+    .menu {
+      display: flex;
+      li a {
+        color: white;
+        font-weight: 900;
+        width: 150px;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        &.active,
+        &:hover {
+          transition: $transition;
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+/* end Header */

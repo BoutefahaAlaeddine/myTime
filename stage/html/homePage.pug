@@ -1,0 +1,64 @@
+include pug/layout/variables.pug
+block pageTitle
+  -var pageNameArb='الصفحة الرئيسية'
+  -var pagesNameeng='homePage'
+doctype
+html(lang="arb" dir="rtl")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    title= pagesNameeng
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    include pug/layout/styles.pug
+body
+  div.header
+    div.container
+      .myLogo
+        img(src='img/logo.png' alt='logo')
+      ul.menu
+        each name ,index in pagesName
+          if(name==pageNameArb)
+            li
+              a(class='active' href=pagesNameEng[index]+'.html')= name
+          else
+            li
+              a(href=pagesNameEng[index]+'.html')= name
+
+  block pageContent   
+    div.scroller.container
+      table.myTiming
+        thead
+          tr
+            th الايام
+            th 0-3
+            th 3-5
+            th 5-8
+            th ضبط
+        tbody
+        -var days=['الاحد','الاثنين','الثلاثاء','الاربعاء','الخميس','الجمعة','السبت'];
+        each day in days
+          tr 
+            td=day
+            -for(var i=0;i<3;i++)
+              td 
+                select
+                  option ...
+                  option مشاهدة 5 فيديوات
+                  option لعب
+                  option بروبلم سولفينغ
+                  option انجليزية
+                  option تسلية
+            td بلا
+
+
+
+
+
+
+
+
+
+
+  include pug/layout/scripts.pug
+
+

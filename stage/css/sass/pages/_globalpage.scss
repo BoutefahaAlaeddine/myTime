@@ -1,0 +1,29 @@
+/* star glopal*/
+html {
+  scroll-behavior: smooth;
+
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  background-image: url(../img/Programming.png);
+  background-size: cover;
+  font: {
+    family: "Noto Naskh Arabic", serif;
+    size: 16px;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* end glopal*/
+
+
+

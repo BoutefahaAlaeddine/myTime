@@ -1,0 +1,72 @@
+/*Star option Page*/
+.option {
+  margin-top: $mt-cont;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+    .box {
+      background-color: #9c9c9c75;
+      border-radius: 10px;
+      padding: 10px;
+
+      &:first-child {
+        width: 100%;
+        margin-bottom: 20px;
+
+        div {
+          float: right;
+          width: 50%;
+          margin-top: 15px;
+        }
+
+        ul {
+          float: left;
+          width: 50%;
+          background-color: $purple2;
+          color: white;
+          text-align: center;
+          margin: 0;
+          overflow-y: auto;
+          height: 100px;
+
+          li {
+            padding: 5px;
+
+            &:nth-child(2n + 1) {
+              background-color: #3248829e;
+            }
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        width: 49%;
+        color: white;
+
+        input[type="number"] {
+          font-size: 20px;
+          text-align: center;
+        }
+
+        input[type="time"] {
+          background-color: rgba(50, 72, 130, 0.6196078431);
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          padding: 5px;
+          color: white;
+          margin-left: 10px;
+        }
+      }
+
+      h3 {
+        color: sandybrown;
+      }
+    }
+  }
+}
+
+/*end option Page*/

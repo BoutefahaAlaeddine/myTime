@@ -1,0 +1,130 @@
+
+extends homePage.pug
+
+block pageTitle
+  -var pageNameArb='مهاراتي'
+  -var pagesNameeng='mySkills'
+block pageContent
+  .mySkills
+    .container
+      .statistics
+        h2 احصائياتي
+        div.percent 
+          span 
+        h3 0%
+        span.more.close المزيد...
+        div.percent-circle
+          div.parent#webDev
+            div.child 
+              span  0%
+              h3 المواقع
+          div.parent#AppDev
+            div.child 
+              span  0%
+              h3 التطبيقات
+          div.parent#WebDesign
+            div.child 
+              span  0%
+              h3 UI UX
+          div.parent#eng
+            div.child 
+              span  0%
+              h3 الانجلزية
+          div.parent#frn
+            div.child 
+              span  0%
+              h3 الفرنسية
+          div.parent#network
+            div.child 
+              span  0%
+              h3 الشبكات
+          div.parent#speedTyping
+            div.child 
+              span  0%
+              h3 الكتابة
+          div.parent#programing
+            div.child 
+              span  0%
+              h3 البرمجة
+          div.parent#Quran
+            div.child 
+              span  0%
+              h3 القران
+      .skills
+        h2 مهاراتي
+        ul.tabs
+          li( class='active' data-skill=".webDev") المواقع
+          li( data-skill=".AppDev") التطبيقات
+          li( data-skill=".WebDesign") UI UX
+          li( data-skill=".eng") الانجلزية
+          li( data-skill=".frn") الفرنسية
+          li( data-skill=".network") الشبكات
+          li( data-skill=".speedTyping") الكتابة
+          li( data-skill=".programing") البرمجة
+          li( data-skill=".Quran") القران
+
+        div.webDev.customScroll
+          - var skills=["html","css","javaScript","jquery","bootstrap","tailwind","pugJs","sass","gulpJs","veJs","reactJs","php","mySql","laravel","nodeJs","JestJS","python","canvasApi","git","gitHub","typescript","graphQl","commandLine","django","wordpress"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.AppDev.customScroll
+          - var skills=["dart","flutter","reactNative","Kotlin","java","Android Studio"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.WebDesign.customScroll
+          - var skills=["photoshop","figma","adobeXd"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.eng.customScroll
+          - var skills=["A1","A2","B1","B2"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.frn.customScroll
+          - var  skills=["A1","A2","B1","B2"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.network.customScroll
+          - var skills=["ccna","ccnp","mcsa","ccie","cyberSecurity"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.speedTyping.customScroll
+          - var skills=["basicLevel1","basicLevel2","basicLevel3","advancedLevel1","advancedLevel2","advancedLevel3","advancedLevel4","advancedLevel5","advancedLevel6","advancedLevel7","advancedLevel8","advancedLevel9","advancedLevel10"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.programing.customScroll
+          - var skills=["c++"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.Quran.customScroll
+            - for (let i = 1; i <= 30; i++)
+              .skill
+                input(type="checkbox")
+                img(src="img/part"+i+".png")
+                h1= "الجزء "+i 
+
+
+

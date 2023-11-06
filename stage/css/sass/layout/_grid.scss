@@ -1,0 +1,28 @@
+/*star grid system*/
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  @media #{$minSmall} {
+    width: 750px;
+  }
+  @media #{$minMedium} {
+    width: 970px;
+  }
+  @media #{$minLarge} {
+    width: 1170px;
+  }
+}
+.text-center-xs {
+  @media #{$maxMobile} {
+    text-align: center;
+  }
+}
+
+.scroller {
+  @media #{$maxMobile} {
+    overflow-x: scroll;
+  }
+}
+/*end grid system*/

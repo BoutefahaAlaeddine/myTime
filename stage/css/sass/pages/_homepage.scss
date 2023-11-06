@@ -1,0 +1,62 @@
+/* star myTiming */
+.scroller.container {
+  margin-top: $mt-cont;
+
+  .myTiming {
+    border-spacing: 0;
+    text-align: center;
+    min-width: 665px;
+    width: 100%;
+    color: #fff;
+    box-shadow: 1px 3px 6px 3px rgba($purple2, 0.8);
+
+    thead {
+      background-color: rgba($purple1, 0.2);
+
+      th {
+        padding: 10px;
+      }
+    }
+
+    tbody {
+      background-color: #27496d78;
+
+      td {
+        border-bottom: 1px solid $purple2;
+
+        &:not(:last-child) {
+          border-left: 1px solid #fff;
+        }
+
+        select {
+          padding: 10px;
+          text-align: center;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          appearance: none;
+          outline: 0;
+          box-shadow: none;
+          border: 0 !important;
+          background: $purple1;
+          width: 100%;
+          background-image: none;
+          flex: 1;
+          color: #fff;
+          cursor: pointer;
+          font-size: 1em;
+
+          &::-ms-expand {
+            display: none;
+          }
+
+          option {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end myTiming */

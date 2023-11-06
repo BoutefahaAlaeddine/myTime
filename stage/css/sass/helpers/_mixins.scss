@@ -1,0 +1,51 @@
+// Media Query Mixin For Help Only
+// Demo Version Only For The Course
+
+@mixin minMedium {
+  @media (min-width: 922px) {
+    @content;
+  }
+}
+
+// overlayMixin
+
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color, $opacity);
+}
+
+// prefixes Mixin
+//auto Add prefixes To Properties
+
+// @mixin prefixer($property, $value, $prefixes:()) {
+//   @each $prefix in $prefixes {
+//     #{'-' + $prefix + '-'+$property}: $value;
+//   }
+
+//   #{$property}: $value;
+// }
+
+//Animation Mixin
+//auto Add prefixes To Animation
+
+@mixin keyFrame($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}

@@ -1,0 +1,30 @@
+/*star components*/
+
+.main-button {
+  background-color: #324882;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  line-height: 1.2;
+  background-color: rgba(#324882, 0.8);
+  color: #fff;
+  min-width: 100px;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: #324882;
+  }
+}
+
+.the-toggler {
+  display: none;
+  font-size: 40px;
+  color: $orange;
+  cursor: pointer;
+  @media #{$maxMobile} {
+    display: block;
+  }
+}
+/*end components*/

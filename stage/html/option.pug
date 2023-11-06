@@ -1,0 +1,33 @@
+
+extends homePage.pug
+
+block pageTitle
+  -var pageNameArb='الاعدادات'
+  -var pagesNameeng='option'
+
+block pageContent
+  div.option
+    .container
+      .box
+        h3 اضافة خيارات
+        div
+          input(class='customInputText' type='text')
+          input(class='main-button' type='submit' value='Add')
+        ul.customScroll
+          li مشاهدة5الفيديوات
+          li مشاهدة5الفيديوات
+          li مشاهدة5الفيديوات
+          li مشاهدة5الفيديوات
+          li مشاهدة5الفيديوات    
+      .box 
+        h3 تعديل تقسيمات الجدول
+        input(class='customInputText' type='number' min='0' max='6')
+        input(class='main-button'  type='submit' value='save')
+      .box
+        h3 تعديل الوقت
+        label البداية 
+          input(type='time' )
+        label النهاية 
+          input(type='time' )
+        input(class='main-button'  type='submit' value='save')
+
