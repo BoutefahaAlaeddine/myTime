@@ -46,6 +46,10 @@ block pageContent
             div.child 
               span  0%
               h3 البرمجة
+          div.parent#iA
+            div.child 
+              span  0%
+              h3 الذكاء الاصطناعي
           div.parent#Quran
             div.child 
               span  0%
@@ -61,10 +65,11 @@ block pageContent
           li( data-skill=".network") الشبكات
           li( data-skill=".speedTyping") الكتابة
           li( data-skill=".programing") البرمجة
+          li( data-skill=".iA") الذكاء الاصطناعي
           li( data-skill=".Quran") القران
 
         div.webDev.customScroll
-          - var skills=["html","css","javaScript","jquery","bootstrap","tailwind","pugJs","sass","gulpJs","veJs","reactJs","php","mySql","laravel","nodeJs","JestJS","python","canvasApi","git","gitHub","typescript","graphQl","commandLine","django","wordpress"]
+          - var skills=["html","css","javaScript","jquery","bootstrap","tailwind","pugJs","sass","gulpJs","veJs","reactJs","php","mySql","laravel","nodeJs","JestJS","canvasApi","git","gitHub","typescript","graphQl","commandLine","django","wordpress"]
             each skill in skills
               .skill
                 input(type="checkbox")
@@ -114,6 +119,13 @@ block pageContent
                 h1= skill 
         div.programing.customScroll
           - var skills=["c++"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill 
+        div.iA.customScroll
+          - var skills=["basicMathematics","python","dataPreprocessing","machineLearning","dataScientist","dataEngineer","artificialIntelligence"]
             each skill in skills
               .skill
                 input(type="checkbox")
