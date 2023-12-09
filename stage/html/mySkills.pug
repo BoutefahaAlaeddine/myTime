@@ -54,6 +54,10 @@ block pageContent
             div.child 
               span  0%
               h3 القران
+          div.parent#Chess
+            div.child 
+              span  0%
+              h3 الشطرنج
       .skills
         h2 مهاراتي
         ul.tabs
@@ -67,6 +71,7 @@ block pageContent
           li( data-skill=".programing") البرمجة
           li( data-skill=".iA") الذكاء الاصطناعي
           li( data-skill=".Quran") القران
+          li( data-skill=".Chess") الشطرنج
 
         div.webDev.customScroll
           - var skills=["html","css","javaScript","jquery","bootstrap","tailwind","pugJs","sass","gulpJs","veJs","reactJs","php","mySql","laravel","nodeJs","JestJS","canvasApi","git","gitHub","typescript","graphQl","commandLine","django","wordpress"]
@@ -131,6 +136,13 @@ block pageContent
                 input(type="checkbox")
                 img(src="img/"+skill+".png")
                 h1= skill 
+        div.Chess.customScroll
+          - var skills=["Beginner","Amateur","Intermediate","Advanced"]
+            each skill in skills
+              .skill
+                input(type="checkbox")
+                img(src="img/"+skill+".png")
+                h1= skill          
         div.Quran.customScroll
             - for (let i = 1; i <= 30; i++)
               .skill
